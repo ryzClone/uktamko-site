@@ -29,7 +29,7 @@ export default function App() {
           ))}
         </ul>
         <div className="flex items-center gap-4">
-          <button className="px-5 py-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-700 text-white font-semibold shadow-md hover:scale-105 transform transition-all duration-300">
+          <button className="px-5 py-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-700 text-white font-semibold shadow-md hover:scale-105 transform transition-all duration-300 cursor-pointer">
             Contact us
           </button>
           <div className="text-sm leading-tight">
@@ -49,41 +49,48 @@ export default function App() {
     <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
       We are a <span className="text-purple-700">weaving company</span>
     </h1>
-    <button className="relative border border-purple-700 text-purple-700 font-semibold px-6 py-3 rounded-full overflow-hidden group cursor-pointer">
+
+    {/* Button 1 */}
+    <button className="relative border border-purple-700 text-purple-700 font-semibold px-6 py-3 rounded-full overflow-hidden group cursor-pointer transform transition-transform duration-300 hover:scale-105">
       <span className="relative z-10 flex items-center gap-2 transition-colors duration-300 delay-200 group-hover:text-white">
         ▶ Watch a video
       </span>
       {/* background animation */}
       <span className="absolute left-1/2 top-0 w-0 h-full bg-purple-700 transition-all duration-[1000ms] ease-out group-hover:w-full group-hover:left-0"></span>
     </button>
+
+
+    {/* Button 2 */}
+    <span className="inline-block mt-4 px-5 py-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-700 text-white font-semibold shadow-md cursor-pointer transform transition-transform duration-300 hover:scale-105">
+      ▶ Watch a video
+    </span>
   </div>
 
-{/* Right side */}
-<div className="flex-1 flex justify-center relative">
-  <div className="relative bg-purple-700 text-white shadow-lg rounded-s p-8 w-full max-w-md z-10"> {/* max-w-lg → max-w-md */}
-    <ul className="space-y-6 text-2xl font-semibold">
-      <li className="flex items-center relative">
-        <span className="absolute -left-12 bg-green-400 text-white rounded-full w-8 h-8 flex items-center justify-center">✔</span>
-        Weaving
-      </li>
-      <li className="flex items-center relative">
-        <span className="absolute -left-12 bg-green-400 text-white rounded-full w-8 h-8 flex items-center justify-center">✔</span>
-        Printing
-      </li>
-      <li className="flex items-center relative">
-        <span className="absolute -left-12 bg-green-400 text-white rounded-full w-8 h-8 flex items-center justify-center">✔</span>
-        Sewing
-      </li>
-      <li className="flex items-center relative">
-        <span className="absolute -left-12 bg-green-400 text-white rounded-full w-8 h-8 flex items-center justify-center">✔</span>
-        Exporting
-      </li>
-    </ul>
+  {/* Right side */}
+  <div className="flex-1 flex justify-center relative">
+    <div className="relative bg-purple-700 text-white shadow-lg rounded-s p-8 w-full max-w-md z-10">
+      <ul className="space-y-6 text-2xl font-semibold">
+        <li className="flex items-center relative">
+          <span className="absolute -left-12 bg-green-400 text-white rounded-full w-8 h-8 flex items-center justify-center">✔</span>
+          Weaving
+        </li>
+        <li className="flex items-center relative">
+          <span className="absolute -left-12 bg-green-400 text-white rounded-full w-8 h-8 flex items-center justify-center">✔</span>
+          Printing
+        </li>
+        <li className="flex items-center relative">
+          <span className="absolute -left-12 bg-green-400 text-white rounded-full w-8 h-8 flex items-center justify-center">✔</span>
+          Sewing
+        </li>
+        <li className="flex items-center relative">
+          <span className="absolute -left-12 bg-green-400 text-white rounded-full w-8 h-8 flex items-center justify-center">✔</span>
+          Exporting
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-
-
 </section>
+
 
 
 
