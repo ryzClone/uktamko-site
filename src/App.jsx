@@ -92,7 +92,7 @@ export default function App() {
 
 
       {/* Features Section */}
-      <section className="flex flex-col md:flex-row bg-gray-800 p-8 gap-6">
+      {/* <section className="flex flex-col md:flex-row bg-gray-800 p-8 gap-6">
         <div className="flex-1 flex flex-col justify-center gap-3">
           <p>✅ Army fabrics</p>
           <p>✅ Poplin</p>
@@ -107,10 +107,10 @@ export default function App() {
             className="rounded-lg"
           />
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials */}
-      <section className="bg-purple-700 py-10">
+      {/* <section className="bg-purple-700 py-10">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
           {[1, 2, 3].map((i) => (
             <div key={i} className="bg-purple-900 p-6 rounded-lg">
@@ -122,10 +122,10 @@ export default function App() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Carousel */}
-      <section className="bg-gray-100 py-10 text-black">
+      {/* <section className="bg-gray-100 py-10 text-black">
         <div className="max-w-5xl mx-auto">
           {carouselItems.length > 0 ? (
             <div className="relative w-full h-96 overflow-hidden rounded-lg shadow-lg">
@@ -153,10 +153,10 @@ export default function App() {
             <p className="text-center text-gray-500">Yuklanmoqda...</p>
           )}
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
-      <section className="bg-white text-black py-10 px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+      {/* <section className="bg-white text-black py-10 px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         <form className="flex flex-col gap-4">
           <h3 className="text-xl font-bold">Contact us</h3>
           <input
@@ -181,10 +181,10 @@ export default function App() {
             loading="lazy"
           ></iframe>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
-      <footer className="bg-purple-700 text-white py-6 text-center">
+      {/* <footer className="bg-purple-700 text-white py-6 text-center">
         <div className="flex justify-center gap-4 mb-2">
           <a href="https://instagram.com" className="hover:underline">
             📸 Instagram
@@ -199,7 +199,7 @@ export default function App() {
         <p className="text-sm text-purple-200">
           © {new Date().getFullYear()} UktamkoTextile. All rights reserved.
         </p>
-      </footer>
+      </footer> */}
     </div>
   );
 }
