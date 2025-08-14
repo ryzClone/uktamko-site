@@ -50,25 +50,30 @@ export default function App() {
       We are a <span className="text-purple-700">weaving company</span>
     </h1>
 
-    {/* Button 1 */}
-    <button className="relative border border-purple-700 text-purple-700 font-semibold px-6 py-3 rounded-full overflow-hidden group cursor-pointer transform transition-transform duration-300 hover:scale-105">
-      <span className="relative z-10 flex items-center gap-2 transition-colors duration-300 delay-200 group-hover:text-white">
-        ▶ Watch a video
-      </span>
-      {/* background animation */}
-      <span className="absolute left-1/2 top-0 w-0 h-full bg-purple-700 transition-all duration-[1000ms] ease-out group-hover:w-full group-hover:left-0"></span>
-    </button>
+
+{/* Button 1 */}
+<span className="relative inline-flex items-center gap-2 mt-4 px-5 py-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-700 text-white font-semibold shadow-md cursor-pointer overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+  {/* Ikonka */}
+  <svg xmlns="http://www.w3.org/2000/svg" 
+      viewBox="0 0 24 24" 
+      fill="currentColor" 
+      className="w-5 h-5 relative z-10">
+    <path d="M8 5v14l11-7z" />
+  </svg>
+  
+  {/* Matn */}
+  <span className="relative z-10">Watch a video</span>
+
+  {/* O‘rtadan fon animatsiyasi */}
+  <span className="absolute left-1/2 top-0 w-0 h-full bg-gradient-to-r from-purple-400 to-purple-600 opacity-30 transition-all duration-700 ease-out group-hover:w-full group-hover:left-0"></span>
+</span>
 
 
-    {/* Button 2 */}
-    <span className="inline-block mt-4 px-5 py-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-700 text-white font-semibold shadow-md cursor-pointer transform transition-transform duration-300 hover:scale-105">
-      ▶ Watch a video
-    </span>
   </div>
 
   {/* Right side */}
   <div className="flex-1 flex justify-center relative">
-    <div className="relative bg-purple-700 text-white shadow-lg rounded-s p-8 w-full max-w-md z-10">
+    <div className="relative bg-purple-700 text-white shadow-lg rounded-l p-8 w-full max-w-md z-10">
       <ul className="space-y-6 text-2xl font-semibold">
         <li className="flex items-center relative">
           <span className="absolute -left-12 bg-green-400 text-white rounded-full w-8 h-8 flex items-center justify-center">✔</span>
