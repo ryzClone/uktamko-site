@@ -20,22 +20,23 @@ export default function App() {
 </div>
 
         <ul className="hidden md:flex gap-6">
-          {["Home", "Fabric", "Gallery"].map((item) => (
-            <li
-              key={item}
-              className="relative cursor-pointer group"
-            >
-              <span className="hover:text-purple-600">{item}</span>
-              {/* underline animation */}
-              <span className="absolute left-1/2 bottom-[-4px] w-0 h-[2px] bg-purple-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
-            </li>
-          ))}
-        </ul>
+  {["Home", "Fabric", "Gallery"].map((item) => (
+    <li
+      key={item}
+      className="relative cursor-pointer group"
+    >
+      <span className="text-[#0a0a0a] font-medium hover:text-purple-600">{item}</span>
+      {/* underline animation */}
+      <span className="absolute left-1/2 bottom-[-4px] w-0 h-[2px] bg-purple-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+    </li>
+  ))}
+</ul>
+
         <div className="flex items-center gap-4">
           <button className="px-5 py-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-700 text-white font-semibold shadow-md hover:scale-105 transform transition-all duration-300 cursor-pointer">
             Contact us
           </button>
-          <div className="text-sm leading-tight">
+          <div className="text-sm leading-tight text-[#0a0a0a] font-medium">
             <p>+99890 123 45 67</p>
           </div>
         </div>
