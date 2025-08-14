@@ -15,7 +15,10 @@ export default function App() {
     <div className="bg-[#0a0a0a] text-gray-100 font-sans">
       {/* Navbar */}
       <nav className="flex justify-between items-center px-8 py-4 bg-white shadow-md text-black">
-        <div className="font-bold text-lg">AsilbekTextile</div>
+       <div className="font-extrabold text-2xl bg-gradient-to-r from-purple-800 via-purple-400 to-purple-600 bg-clip-text text-transparent drop-shadow-lg tracking-wide transform transition-transform duration-300 hover:scale-110">
+  AsilbekTextile
+</div>
+
         <ul className="hidden md:flex gap-6">
           {["Home", "Fabric", "Gallery"].map((item) => (
             <li
